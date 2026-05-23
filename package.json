@@ -1,0 +1,23 @@
+{
+  "name": "architecture-notes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:list": "node scripts/generate-list.mjs",
+    "docs:list:check": "node scripts/generate-list.mjs --check",
+    "lint:markdown": "markdownlint-cli2",
+    "lint:text": "textlint README.md docs/**/*.md",
+    "check:links": "node scripts/check-links.mjs",
+    "check:docs": "node scripts/check-docs.mjs",
+    "check:mermaid": "node scripts/check-mermaid.mjs",
+    "check": "npm run docs:list:check && npm run lint:markdown && npm run lint:text && npm run check:links && npm run check:docs && npm run check:mermaid"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "*",
+    "markdown-link-check": "*",
+    "markdownlint-cli2": "*",
+    "textlint": "*",
+    "textlint-filter-rule-comments": "*",
+    "textlint-rule-ja-no-mixed-period": "*"
+  }
+}
