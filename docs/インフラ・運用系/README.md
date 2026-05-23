@@ -2,16 +2,18 @@
 
 クラウド、コンテナ、運用、デプロイ、サービス間通信の基盤設計を扱うカテゴリです。
 
-## 候補
+## 作成済みドキュメント
 
-- Three-Tier Architecture
-- Cloud Native Architecture
-- Container-Based Architecture
-- Sidecar Pattern
-- Service Mesh
-- Blue-Green Deployment
-- Canary Release
+| アーキテクチャ | 概要 |
+| --- | --- |
+| [Three-Tier Architecture](./3層アーキテクチャ.md) | Presentation、Application、Dataの3層に分ける基本的なシステム構成です。 |
+| [Cloud Native Architecture](./クラウドネイティブアーキテクチャ.md) | コンテナ、動的オーケストレーション、マネージドサービス、疎結合、観測性、自動化を前提にクラウドで構築・運用する考え方です。 |
+| [Container-Based Architecture](./コンテナベースアーキテクチャ.md) | アプリケーションと依存関係をコンテナイメージとしてパッケージ化し、環境差異を抑えて実行する構成です。 |
+| [Sidecar Pattern](./サイドカーパターン.md) | メインアプリケーションの横に補助プロセスや補助コンテナを配置し、共通機能を担わせるパターンです。 |
+| [Service Mesh](./サービスメッシュ.md) | サービス間通信の認証、暗号化、リトライ、タイムアウト、トラフィック制御、観測を基盤で扱う構成です。 |
+| [Blue-Green Deployment](./ブルーグリーンデプロイメント.md) | 本番相当の2つの環境を用意し、片方へ新バージョンをデプロイしてトラフィックを切り替えるリリース方式です。 |
+| [Canary Release](./カナリアリリース.md) | 新バージョンを一部ユーザーや一部トラフィックにだけ適用し、段階的に対象を広げるリリース方式です。 |
 
 ## 参考
 
-- 未参照。一般的な知識をもとに作成。
+- 同カテゴリの作成済みドキュメントをもとに更新。
