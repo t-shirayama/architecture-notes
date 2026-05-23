@@ -2,6 +2,16 @@
 
 セキュリティ境界、障害隔離、連鎖障害の抑制、信頼性設計を扱うカテゴリです。
 
+## 比較の早見表
+
+| 判断したいこと | 候補 | 見るポイント |
+| --- | --- | --- |
+| 暗黙の信頼を減らしたい | Zero Trust Architecture | ID、端末状態、リスク、最小権限、継続監視を整える |
+| 単一防御策への依存を減らしたい | Defense in Depth | 予防、検知、封じ込め、復旧を重ねる |
+| 障害影響をユーザー群単位に閉じたい | Cell-Based Architecture | Cell Router、Control Plane、Shared Serviceの障害点を設計する |
+| リソース枯渇の波及を防ぎたい | Bulkhead Pattern | スレッド、接続、キュー、テナントなどの隔離単位を決める |
+| 下流障害の連鎖を止めたい | Circuit Breaker Pattern | Timeout、Retry、Fallback、状態監視をセットで設計する |
+
 ## 作成済みドキュメント
 
 | アーキテクチャ | 概要 |
