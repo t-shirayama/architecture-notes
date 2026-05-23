@@ -108,11 +108,11 @@
 | [MVVM](./docs/フロントエンド系/MVVM.md) | ViewModelを介してUIと状態・ロジックを分離する | `docs/フロントエンド系/` |
 | [Flux](./docs/フロントエンド系/Flux.md) | 単方向データフローで状態管理を行う | `docs/フロントエンド系/` |
 | [Redux Architecture](./docs/フロントエンド系/Reduxアーキテクチャ.md) | Store / Action / Reducer による状態管理構成 | `docs/フロントエンド系/` |
-| [Feature-Sliced Design](./docs/フロントエンド系/Feature-Sliced Design.md) | フロントエンドを feature / entity / shared などの単位で分割する | `docs/フロントエンド系/` |
-| [Atomic Design](./docs/フロントエンド系/Atomic Design.md) | UIを atoms / molecules / organisms などの粒度で整理する | `docs/フロントエンド系/` |
+| [Feature-Sliced Design](./docs/フロントエンド系/Feature-Sliced%20Design.md) | フロントエンドを feature / entity / shared などの単位で分割する | `docs/フロントエンド系/` |
+| [Atomic Design](./docs/フロントエンド系/Atomic%20Design.md) | UIを atoms / molecules / organisms などの粒度で整理する | `docs/フロントエンド系/` |
 | [Micro Frontends](./docs/フロントエンド系/マイクロフロントエンド.md) | フロントエンドを独立したアプリケーション単位に分割する | `docs/フロントエンド系/` |
 | [Islands Architecture](./docs/フロントエンド系/アイランドアーキテクチャ.md) | 静的HTMLを中心に、必要な部分だけをインタラクティブにする | `docs/フロントエンド系/` |
-| [Backend for Frontend](./docs/フロントエンド系/Backend for Frontend.md) | クライアント種別ごとに専用のバックエンドAPI層を設ける | `docs/フロントエンド系/` |
+| [Backend for Frontend](./docs/フロントエンド系/Backend%20for%20Frontend.md) | クライアント種別ごとに専用のバックエンドAPI層を設ける | `docs/フロントエンド系/` |
 
 ### エンタープライズ統合・連携系
 
