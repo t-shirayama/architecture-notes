@@ -157,7 +157,20 @@
 3. [docs/_template.md](./docs/_template.md) に沿って概要、図、比較、参考を書く
 4. Mermaid図がMarkdownとして読めるか確認する
 5. 参考資料のリンク切れや出典不足がないか確認する
+6. [ドキュメント品質基準](./docs/品質基準.md) の完了前チェックを満たしているか確認する
+
+## 品質確認
+
+更新時は、少なくとも次の観点を確認します。
+
+- READMEとカテゴリREADMEのローカルリンクが切れていない
+- 個別アーキテクチャ文書に `## 参考` と Mermaid図がある
+- 類似アーキテクチャとの差分が具体的で、汎用表現に逃げていない
+- 図の説明が対象固有の読み方になっている
+- 表記ゆれが用語集やREADMEと大きくずれていない
 
 ## 参考
 
-- 未参照。一般的な知識をもとに作成。
+- Mark Richards, Neal Ford, *Fundamentals of Software Architecture*, O'Reilly, 2020
+- Martin Fowler, [Software Architecture Guide](https://martinfowler.com/architecture/)
+- Microsoft, [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
