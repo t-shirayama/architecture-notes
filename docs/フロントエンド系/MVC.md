@@ -94,5 +94,5 @@ flowchart LR
 
 ## 参考
 
-- Trygve Reenskaug, [The original MVC reports](https://folk.universitetetioslo.no/trygver/themes/mvc/mvc-index.html)
+- Trygve Reenskaug, *The original MVC reports*, 1979-1980
 - Martin Fowler, [GUI Architectures](https://martinfowler.com/eaaDev/uiArchs.html)
