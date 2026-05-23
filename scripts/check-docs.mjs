@@ -4,6 +4,14 @@ import path from "node:path";
 const root = process.cwd();
 const docsDir = path.join(root, "docs");
 const errors = [];
+const excludedSupportDocs = new Set([
+  "README.md",
+  "比較.md"
+]);
+const excludedSupportSuffixes = [
+  "_notes.md",
+  "_examples.md"
+];
 
 function walkMarkdownFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -30,7 +38,11 @@ function isCategoryDir(dirPath) {
 }
 
 function isArchitectureDoc(filePath) {
-  return path.dirname(path.dirname(filePath)) === docsDir && path.basename(filePath) !== "README.md";
+  return path.dirname(path.dirname(filePath)) === docsDir && !isSupportDoc(path.basename(filePath));
+}
+
+function isSupportDoc(fileName) {
+  return excludedSupportDocs.has(fileName) || excludedSupportSuffixes.some((suffix) => fileName.endsWith(suffix));
 }
 
 function linkTargetFor(fileName) {
@@ -55,7 +67,7 @@ for (const entry of fs.readdirSync(docsDir, { withFileTypes: true })) {
 
   const readme = fs.readFileSync(readmePath, "utf8");
   const docs = fs.readdirSync(categoryDir, { withFileTypes: true })
-    .filter((child) => child.isFile() && child.name.endsWith(".md") && child.name !== "README.md")
+    .filter((child) => child.isFile() && child.name.endsWith(".md") && !isSupportDoc(child.name))
     .map((child) => child.name);
 
   for (const doc of docs) {
